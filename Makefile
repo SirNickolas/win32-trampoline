@@ -16,5 +16,5 @@ all: a.exe
 clean:
 	$(RM) a.exe
 
-a.exe: main.c
-	$(CC) $(CFLAGS) -o$@ $^
+a.exe: main.c Makefile
+	$(CC) $(CFLAGS) -o$@ $<
